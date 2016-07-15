@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: emcee
@@ -7,7 +7,7 @@ package:
 source:
   fn: emcee-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/e/emcee/emcee-{{ version }}.tar.gz
-  md5: 1219413d809efaa647134a77b58940b7 
+  md5: cd3f7a6ff6a8124fed86afeea69b9cac
 
 build:
   number: 0
