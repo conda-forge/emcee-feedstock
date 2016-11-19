@@ -33,7 +33,6 @@ conda search emcee --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
