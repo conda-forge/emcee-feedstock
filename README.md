@@ -1,7 +1,7 @@
 About emcee
 ===========
 
-Home: http://danfm.ca/emcee/
+Home: http://dan.iel.fm/emcee/
 
 Package license: MIT
 

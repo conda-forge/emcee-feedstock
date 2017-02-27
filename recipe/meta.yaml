@@ -26,13 +26,9 @@ requirements:
 test:
   imports:
     - emcee
-  requires:
-    - nose
-  commands: 
-    - nosetests {{ environ.SRC_DIR }}/emcee -sv
 
 about:
-  home: http://danfm.ca/emcee/
+  home: http://dan.iel.fm/emcee/
   license: MIT
   summary: 'Kick ass affine-invariant ensemble MCMC sampling'
 
