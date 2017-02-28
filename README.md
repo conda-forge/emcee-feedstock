@@ -1,7 +1,7 @@
 About emcee
 ===========
 
-Home: http://danfm.ca/emcee/
+Home: http://dan.iel.fm/emcee/
 
 Package license: MIT
 
@@ -10,6 +10,18 @@ Feedstock license: BSD 3-Clause
 Summary: Kick ass affine-invariant ensemble MCMC sampling
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/emcee-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/emcee-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/emcee-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/emcee-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/emcee-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/emcee-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/emcee/badges/version.svg)](https://anaconda.org/conda-forge/emcee)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/emcee/badges/downloads.svg)](https://anaconda.org/conda-forge/emcee)
 
 Installing emcee
 ================
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/emcee-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/emcee-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/emcee-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/emcee-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/emcee-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/emcee-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/emcee/badges/version.svg)](https://anaconda.org/conda-forge/emcee)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/emcee/badges/downloads.svg)](https://anaconda.org/conda-forge/emcee)
 
 
 Updating emcee-feedstock
