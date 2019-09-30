@@ -35,6 +35,7 @@ test:
 about:
   home: https://emcee.readthedocs.io
   license: MIT
+  license_file: LICENSE
   summary: 'The Python ensemble sampling toolkit for affine-invariant MCMC'
 
 extra:
