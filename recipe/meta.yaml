@@ -1,4 +1,4 @@
-{% set version = "2.2.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: emcee
@@ -7,12 +7,12 @@ package:
 source:
   fn: emcee-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/e/emcee/emcee-{{ version }}.tar.gz
-  md5: cd3f7a6ff6a8124fed86afeea69b9cac
+  md5: 4424318732c500a1d4db1b71e3eea7cf
 
 build:
   noarch: python
-  number: 4
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
