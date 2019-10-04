@@ -1,4 +1,4 @@
-{% set version = "2.2.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: emcee
@@ -7,12 +7,12 @@ package:
 source:
   fn: emcee-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/e/emcee/emcee-{{ version }}.tar.gz
-  md5: cd3f7a6ff6a8124fed86afeea69b9cac
+  sha256: 353c26d8a8b09553532cd93662ddbedcd1a77feecefda5e46ea7e38829dede89
 
 build:
   noarch: python
-  number: 4
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -24,15 +24,19 @@ requirements:
   run:
     - python
     - numpy
+    - tqdm
+    - h5py
+    - schwimmbad
 
 test:
   imports:
     - emcee
 
 about:
-  home: http://dan.iel.fm/emcee/
+  home: https://emcee.readthedocs.io
   license: MIT
-  summary: 'Kick ass affine-invariant ensemble MCMC sampling'
+  license_file: LICENSE
+  summary: 'The Python ensemble sampling toolkit for affine-invariant MCMC'
 
 extra:
   recipe-maintainers:
