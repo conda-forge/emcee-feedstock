@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
     - numpy
 
   run:
-    - python
+    - python >=3.6
     - numpy
     - tqdm
     - h5py
