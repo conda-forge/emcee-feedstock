@@ -1,42 +1,44 @@
-{% set version = "3.1.1" %}
+{% set name = "emcee" %}
+{% set version = "3.1.2" %}
 
 package:
-  name: emcee
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: emcee-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/e/emcee/emcee-{{ version }}.tar.gz
-  sha256: 48ffc6a7f5c51760b7a836056184c7286a9959ef81b45b977b02794f1210fb5c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emcee-{{ version }}.tar.gz
+  sha256: 7f668b1a0db8f591b5cff26e8671c98c943417e1508dae8c752170883f4c0981
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools
-    - numpy
-
+    - setuptools >=40.6.0
+    - setuptools-scm
+    - wheel
   run:
-    - python >=3.6
     - numpy
-    - tqdm
-    - h5py
-    - schwimmbad
+    - python >=3.6
 
 test:
   imports:
     - emcee
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://emcee.readthedocs.io
+  summary: The Python ensemble sampling toolkit for MCMC
+  dev_url: https://github.com/dfm/emcee
   license: MIT
   license_file: LICENSE
-  summary: The Python ensemble sampling toolkit for affine-invariant MCMC
 
 extra:
   recipe-maintainers:
