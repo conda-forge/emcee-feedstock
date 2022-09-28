@@ -1,5 +1,5 @@
 {% set name = "emcee" %}
-{% set version = "3.1.2" %}
+{% set version = "3.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emcee-{{ version }}.tar.gz
-  sha256: 7f668b1a0db8f591b5cff26e8671c98c943417e1508dae8c752170883f4c0981
+  sha256: fb6865b38a3f03402b79e0d90685ecb87c4124dd6e7eb41555ba7a6d094fcad0
 
 build:
   noarch: python
